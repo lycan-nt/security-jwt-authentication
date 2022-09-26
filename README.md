@@ -19,7 +19,7 @@
 ### API resources
   - URL Base: localhost:8080/
       - Resource Authentication
-        - Requisition Type: POST Route: /login/ 
+        - Requisition Type: POST, Route: /login/ 
             (Log in with a username and password that must be sent in the request header.
               KEY: username
               KEY: password
@@ -28,9 +28,9 @@
               admin/admin)
               Note: After logging in, a token will be returned in the response header, 
               it must be used in the next requests and lasts for 5 minutes.
-        - Requisition Type: POST Route: /profile/ 
+        - Requisition Type: GET, Route: /profile/ 
             (This request expects an authentication token)
-        - Requisition Type: POST Route: /admin/ 
+        - Requisition Type: GET, Route: /admin/ 
             (This request expects an authentication token)
             
 ## Author
